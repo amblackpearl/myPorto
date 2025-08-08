@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyo Adi Wibowo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="css/tailwind.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans font-poppins">
+    <!-- Animated Background Elements -->
+    <div class="fixed inset-0 overflow-hidden -z-10">
+        <div class="absolute top-20 left-10 w-8 h-8 rounded-full bg-blue-200 opacity-20 animate-pulse"></div>
+        <div class="absolute top-1/3 right-20 w-12 h-12 rounded-full bg-green-200 opacity-20 animate-pulse animation-delay-1000"></div>
+        <div class="absolute bottom-1/4 left-1/4 w-16 h-16 rounded-full bg-purple-200 opacity-20 animate-pulse animation-delay-2000"></div>
+    </div>
+
+    <!-- Navigation with Hover Effects -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-md z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary hover:text-secondary transition-all duration-300 flex items-center">
+                <span class="mr-2">👨‍💻</span> PAW
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#skills" class="text-dark hover:text-primary transition-all duration-300 hover:scale-105 flex flex-col items-center">
+                    <span class="text-sm opacity-70">01</span>
+                    <span>Skills</span>
+                </a>
+                <a href="#projects" class="text-dark hover:text-primary transition-all duration-300 hover:scale-105 flex flex-col items-center">
+                    <span class="text-sm opacity-70">02</span>
+                    <span>Projects</span>
+                </a>
+                <a href="#contact" class="text-dark hover:text-primary transition-all duration-300 hover:scale-105 flex flex-col items-center">
+                    <span class="text-sm opacity-70">03</span>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-dark hover:text-primary transition">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-sm pb-4 px-6">
+            <a href="#skills" class="block py-3 text-dark hover:text-primary transition border-b border-gray-100">Skills</a>
+            <a href="#projects" class="block py-3 text-dark hover:text-primary transition border-b border-gray-100">Projects</a>
+            <a href="#contact" class="block py-3 text-dark hover:text-primary transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Floating Animation -->
+    <header class="pt-32 pb-20 bg-gradient-to-br from-primary to-secondary text-white relative overflow-hidden">
+        <!-- Animated circuit background -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-circuit-pattern bg-repeat bg-center"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <div class="floating inline-block">
+                    <img src="assets/images/profile.jpg" alt="Profile" class="mx-auto rounded-full border-4 border-white mb-6 w-36 h-36 object-cover shadow-xl hover:shadow-2xl transition-all duration-300">
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">Priyo Adi Wibowo</h1>
+                <div class="typewriter text-2xl md:text-3xl font-semibold mb-6">
+                    <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                </div>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">Creating innovative electronics solutions with cutting-edge technology and creative problem-solving.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#contact" class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-all hover:scale-105 shadow-lg">
+                        <i class="fas fa-paper-plane mr-2"></i> Contact Me
+                    </a>
+                    <a href="#projects" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-primary transition-all hover:scale-105">
+                        <i class="fas fa-laptop-code mr-2"></i> View Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Technical Skills Section with Interactive Cards -->
+    <section id="skills" class="section py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-dark relative inline-block">
+                <span class="relative z-10 px-4">Technical Expertise</span>
+                <span class="absolute bottom-0 left-0 w-full h-2 bg-accent/30 -z-0"></span>
+            </h2>
+            
+            <div class="max-w-5xl mx-auto space-y-8">
+                <!-- Electronics Engineering - Interactive Card -->
+                <div class="skill-card group bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl border-l-4 border-primary transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary text-4xl mr-4 transition-all duration-300 group-hover:text-secondary">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Electronics Engineering</h3>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <span>Embedded Systems</span>
+                        </div>
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <span>IoT Solutions</span>
+                        </div>
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <span>PCB Design</span>
+                        </div>
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <span>Circuit Analysis</span>
+                        </div>
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fas fa-sliders-h"></i>
+                            </div>
+                            <span>System Control</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Programming - Interactive Card -->
+                <div class="skill-card group bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl border-l-4 border-primary transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary text-4xl mr-4 transition-all duration-300 group-hover:text-secondary">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Programming</h3>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fab fa-cuttlefish"></i>
+                            </div>
+                            <span>C++</span>
+                            <span class="text-xs text-gray-500 mt-1">Embedded</span>
+                        </div>
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span>Python</span>
+                            <span class="text-xs text-gray-500 mt-1">Automation</span>
+                        </div>
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span>JavaScript</span>
+                            <span class="text-xs text-gray-500 mt-1">Web</span>
+                        </div>
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <span>Ladder Logic</span>
+                            <span class="text-xs text-gray-500 mt-1">PLC</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Software & Tools - Interactive Card -->
+                <div class="skill-card group bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl border-l-4 border-primary transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary text-4xl mr-4 transition-all duration-300 group-hover:text-secondary">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Software & Tools</h3>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                        <div class="tech-icon bg-white p-3 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <img src="assets/icons/proteus.png" alt="Proteus" class="w-10 h-10 object-contain mb-2">
+                            <span class="text-sm">Proteus</span>
+                        </div>
+                        <div class="tech-icon bg-white p-3 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <img src="assets/icons/kicad.png" alt="KiCad" class="w-10 h-10 object-contain mb-2">
+                            <span class="text-sm">KiCad</span>
+                        </div>
+                        <div class="tech-icon bg-white p-3 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <img src="assets/icons/solidworks.png" alt="SolidWorks" class="w-10 h-10 object-contain mb-2">
+                            <span class="text-sm">SolidWorks</span>
+                        </div>
+                        <div class="tech-icon bg-white p-3 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <img src="assets/icons/vscode.png" alt="VS Code" class="w-10 h-10 object-contain mb-2">
+                            <span class="text-sm">VS Code</span>
+                        </div>
+                        <div class="tech-icon bg-white p-3 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <img src="assets/icons/arduino.png" alt="Arduino" class="w-10 h-10 object-contain mb-2">
+                            <span class="text-sm">Arduino IDE</span>
+                        </div>
+                        <div class="tech-icon bg-white p-3 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <img src="assets/icons/excel.png" alt="Excel" class="w-10 h-10 object-contain mb-2">
+                            <span class="text-sm">MS Excel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Interactive Cards -->
+    <section id="projects" class="section py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-dark relative inline-block">
+                <span class="relative z-10 px-4">Featured Projects</span>
+                <span class="absolute bottom-0 left-0 w-full h-2 bg-accent/30 -z-0"></span>
+            </h2>
+            
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 - Interactive Card -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                    <div class="overflow-hidden">
+                        <img src="assets/images/project-3dprinter.jpg" alt="3D Printer Extruder" class="project-image w-full h-48 object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Smart 3D Printer Extruder</h3>
+                            <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">2023</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Precision control system for optimized 3D printing with adjustable parameters.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Embedded</span>
+                            <span class="skill-tag bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">PID Control</span>
+                            <span class="skill-tag bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">3D Printing</span>
+                        </div>
+                        <button class="mt-4 text-primary hover:text-secondary font-medium flex items-center transition-all group-hover:translate-x-1">
+                            View Details <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - Interactive Card -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                    <div class="overflow-hidden">
+                        <img src="assets/images/project-lift.jpg" alt="Lift Prototype" class="project-image w-full h-48 object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Virtual Button Lift System</h3>
+                            <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">2022</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Touchless elevator control with enhanced safety features and efficiency.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">PLC</span>
+                            <span class="skill-tag bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">HMI</span>
+                            <span class="skill-tag bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Industrial</span>
+                        </div>
+                        <button class="mt-4 text-primary hover:text-secondary font-medium flex items-center transition-all group-hover:translate-x-1">
+                            View Details <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 3 - Interactive Card -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                    <div class="overflow-hidden">
+                        <img src="assets/images/project-lawn.jpg" alt="Lawn Watering System" class="project-image w-full h-48 object-cover transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Smart Lawn Watering</h3>
+                            <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">2023</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">IoT-based irrigation system with web control and environmental sensing.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">ESP32</span>
+                            <span class="skill-tag bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">IoT</span>
+                            <span class="skill-tag bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Web Server</span>
+                        </div>
+                        <button class="mt-4 text-primary hover:text-secondary font-medium flex items-center transition-all group-hover:translate-x-1">
+                            View Details <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="load-more" class="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition-all hover:scale-105 shadow-lg">
+                    <span>Load More Projects</span>
+                    <i class="fas fa-spinner animate-spin ml-2 hidden"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Interactive Form -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary to-secondary text-white relative overflow-hidden">
+        <!-- Animated circuit background -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-circuit-pattern bg-repeat bg-center"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-3xl font-bold text-center mb-12">Let's Connect</h2>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="animate__animated animate__fadeInLeft">
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start hover:scale-[1.02] transition-transform duration-300">
+                            <div class="bg-white/10 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p>contact@priyoadiwibowo.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start hover:scale-[1.02] transition-transform duration-300">
+                            <div class="bg-white/10 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p>+62 812 3456 7890</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start hover:scale-[1.02] transition-transform duration-300">
+                            <div class="bg-white/10 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p>Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-medium mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="social-icon bg-white/10 p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-white/10 p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-white/10 p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-white/10 p-3 rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="animate__animated animate__fadeInRight">
+                    <form id="contact-form" class="space-y-4">
+                        <div class="form-group">
+                            <label for="name" class="block mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent placeholder-white/70 transition-all duration-300 hover:bg-white/20">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="block mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent placeholder-white/70 transition-all duration-300 hover:bg-white/20">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="block mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent placeholder-white/70 transition-all duration-300 hover:bg-white/20"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-all hover:scale-[1.02] shadow-lg flex items-center justify-center">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Wave Animation -->
+    <footer class="bg-dark text-white pt-12 pb-8 relative">
+        <div class="wave-animation absolute top-0 left-0 w-full h-12 -translate-y-full overflow-hidden">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="absolute top-0 left-0 w-full h-full">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="fill-current"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="fill-current"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="fill-current"></path>
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="#" class="text-xl hover:text-primary transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-xl hover:text-primary transition"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-xl hover:text-primary transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-xl hover:text-primary transition"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="mb-4">&copy; <span id="year"></span> Priyo Adi Wibowo. All rights reserved.</p>
+                <p class="text-sm text-gray-400">Made with <i class="fas fa-heart text-red-500"></i> by Priyo Adi Wibowo</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 opacity-0 invisible hover:scale-110">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Typewriter Effect
+        const typed = new Typed('.typed-text', {
+            strings: [
+                'Electronics Engineer',
+                'Embedded Systems Developer',
+                'IoT Specialist',
+                'PLC Programmer'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|'
+        });
+
+        // Form Submission Animation
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            submitBtn.innerHTML = '<i class="fas fa-spinner animate-spin mr-2"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i> Message Sent!';
+                submitBtn.classList.remove('bg-white', 'hover:bg-gray-100');
+                submitBtn.classList.add('bg-green-500', 'hover:bg-green-600', 'text-white');
+                
+                // Reset form after 3 seconds
+                setTimeout(() => {
+                    contactForm.reset();
+                    submitBtn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane ml-2"></i>';
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('bg-green-500', 'hover:bg-green-600', 'text-white');
+                    submitBtn.classList.add('bg-white', 'hover:bg-gray-100');
+                }, 3000);
+            }, 2000);
+        });
+
+        // Load More Projects Animation
+        const loadMoreBtn = document.getElementById('load-more');
+        loadMoreBtn.addEventListener('click', function() {
+            const spinner = this.querySelector('.fa-spinner');
+            spinner.classList.remove('hidden');
+            this.disabled = true;
+            
+            // Simulate loading
+            setTimeout(() => {
+                spinner.classList.add('hidden');
+                this.disabled = false;
+                this.innerHTML = '<span>No More Projects</span><i class="fas fa-check ml-2"></i>';
+                this.classList.remove('bg-primary', 'hover:bg-secondary');
+                this.classList.add('bg-gray-400', 'cursor-not-allowed');
+            }, 1500);
+        });
+
+        // Hover effects for project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body>
+</html>
