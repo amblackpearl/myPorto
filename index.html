@@ -19,22 +19,24 @@
     </div>
 
     <!-- Navigation with Hover Effects -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-md z-10">
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-md z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-primary hover:text-secondary transition-all duration-300 flex items-center">
-                <span class="mr-2">👨‍💻</span> PAW
+                <i class="fas fa-paw" style="transform: rotate(12deg); display: inline-block;"></i>
+                <i class="fas fa-p" style="transform: rotate(-22deg); display: inline-block;"></i>
+                <i class="fas fa-a" style="transform: rotate(8deg); display: inline-block;"></i>
+                <i class="fas fa-w" style="transform: rotate(-16deg); display: inline-block;"></i>
             </a>
             <div class="hidden md:flex space-x-8">
                 <a href="#skills" class="text-dark hover:text-primary transition-all duration-300 hover:scale-105 flex flex-col items-center">
-                    <span class="text-sm opacity-70">01</span>
                     <span>Skills</span>
                 </a>
                 <a href="#projects" class="text-dark hover:text-primary transition-all duration-300 hover:scale-105 flex flex-col items-center">
-                    <span class="text-sm opacity-70">02</span>
+                    <!-- <span class="text-sm opacity-70">02</span> -->
                     <span>Projects</span>
                 </a>
                 <a href="#contact" class="text-dark hover:text-primary transition-all duration-300 hover:scale-105 flex flex-col items-center">
-                    <span class="text-sm opacity-70">03</span>
+                    <!-- <span class="text-sm opacity-70">03</span> -->
                     <span>Contact</span>
                 </a>
             </div>
@@ -60,7 +62,7 @@
         <div class="container mx-auto px-6 text-center relative z-10">
             <div class="max-w-4xl mx-auto">
                 <div class="floating inline-block">
-                    <img src="assets/images/profile.jpg" alt="Profile" class="mx-auto rounded-full border-4 border-white mb-6 w-36 h-36 object-cover shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <img src="assets/pp.jpg" alt="Profile" class="mx-auto rounded-full border-4 border-white mb-6 w-56 h-56 object-cover shadow-xl hover:shadow-2xl transition-all duration-300">
                 </div>
                 <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">Priyo Adi Wibowo</h1>
                 <div class="typewriter text-2xl md:text-3xl font-semibold mb-6">
@@ -111,19 +113,19 @@
                         </div>
                         <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
                             <div class="text-primary text-2xl mb-2">
-                                <i class="fas fa-project-diagram"></i>
+                                <i class="fas fa-pencil"></i>
                             </div>
                             <span>PCB Design</span>
                         </div>
                         <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
                             <div class="text-primary text-2xl mb-2">
-                                <i class="fas fa-bolt"></i>
+                                <i class="fas fa-search"></i>
                             </div>
                             <span>Circuit Analysis</span>
                         </div>
                         <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
                             <div class="text-primary text-2xl mb-2">
-                                <i class="fas fa-sliders-h"></i>
+                                <i class="fas fa-gamepad"></i>
                             </div>
                             <span>System Control</span>
                         </div>
@@ -148,10 +150,17 @@
                         </div>
                         <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
                             <div class="text-primary text-2xl mb-2">
-                                <i class="fab fa-python"></i>
+                                <i class="fab fa-html5"></i>
                             </div>
-                            <span>Python</span>
-                            <span class="text-xs text-gray-500 mt-1">Automation</span>
+                            <span>HTML</span>
+                            <span class="text-xs text-gray-500 mt-1">Web</span>
+                        </div>
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span>CSS</span>
+                            <span class="text-xs text-gray-500 mt-1">Web</span>
                         </div>
                         <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
                             <div class="text-primary text-2xl mb-2">
@@ -162,10 +171,17 @@
                         </div>
                         <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
                             <div class="text-primary text-2xl mb-2">
-                                <i class="fas fa-sitemap"></i>
+                                <i class="fa-sliders-h fa-microchip"></i>
                             </div>
                             <span>Ladder Logic</span>
                             <span class="text-xs text-gray-500 mt-1">PLC</span>
+                        </div>
+                        <div class="skill-badge bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center">
+                            <div class="text-primary text-2xl mb-2">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span>Python</span>
+                            <span class="text-xs text-gray-500 mt-1">Automation</span>
                         </div>
                     </div>
                 </div>
@@ -412,76 +428,6 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js"></script>
-    <script>
-        // Typewriter Effect
-        const typed = new Typed('.typed-text', {
-            strings: [
-                'Electronics Engineer',
-                'Embedded Systems Developer',
-                'IoT Specialist',
-                'PLC Programmer'
-            ],
-            typeSpeed: 50,
-            backSpeed: 30,
-            loop: true,
-            showCursor: true,
-            cursorChar: '|'
-        });
-
-        // Form Submission Animation
-        const contactForm = document.getElementById('contact-form');
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const submitBtn = this.querySelector('button[type="submit"]');
-            submitBtn.innerHTML = '<i class="fas fa-spinner animate-spin mr-2"></i> Sending...';
-            submitBtn.disabled = true;
-            
-            // Simulate form submission
-            setTimeout(() => {
-                submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i> Message Sent!';
-                submitBtn.classList.remove('bg-white', 'hover:bg-gray-100');
-                submitBtn.classList.add('bg-green-500', 'hover:bg-green-600', 'text-white');
-                
-                // Reset form after 3 seconds
-                setTimeout(() => {
-                    contactForm.reset();
-                    submitBtn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane ml-2"></i>';
-                    submitBtn.disabled = false;
-                    submitBtn.classList.remove('bg-green-500', 'hover:bg-green-600', 'text-white');
-                    submitBtn.classList.add('bg-white', 'hover:bg-gray-100');
-                }, 3000);
-            }, 2000);
-        });
-
-        // Load More Projects Animation
-        const loadMoreBtn = document.getElementById('load-more');
-        loadMoreBtn.addEventListener('click', function() {
-            const spinner = this.querySelector('.fa-spinner');
-            spinner.classList.remove('hidden');
-            this.disabled = true;
-            
-            // Simulate loading
-            setTimeout(() => {
-                spinner.classList.add('hidden');
-                this.disabled = false;
-                this.innerHTML = '<span>No More Projects</span><i class="fas fa-check ml-2"></i>';
-                this.classList.remove('bg-primary', 'hover:bg-secondary');
-                this.classList.add('bg-gray-400', 'cursor-not-allowed');
-            }, 1500);
-        });
-
-        // Hover effects for project cards
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                card.style.setProperty('--mouse-x', `${x}px`);
-                card.style.setProperty('--mouse-y', `${y}px`);
-            });
-        });
-    </script>
+    
 </body>
 </html>

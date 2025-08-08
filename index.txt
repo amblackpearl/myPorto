@@ -336,3 +336,76 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+
+<script>
+        // Typewriter Effect
+        const typed = new Typed('.typed-text', {
+            strings: [
+                'Electronics Engineer',
+                'PCB Designer',
+                'IoT Enthusiast',
+                'PLC Programmer',
+                'KONTOLLLLLLL'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|'
+        });
+
+        // Form Submission Animation
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            submitBtn.innerHTML = '<i class="fas fa-spinner animate-spin mr-2"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i> Message Sent!';
+                submitBtn.classList.remove('bg-white', 'hover:bg-gray-100');
+                submitBtn.classList.add('bg-green-500', 'hover:bg-green-600', 'text-white');
+                
+                // Reset form after 3 seconds
+                setTimeout(() => {
+                    contactForm.reset();
+                    submitBtn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane ml-2"></i>';
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('bg-green-500', 'hover:bg-green-600', 'text-white');
+                    submitBtn.classList.add('bg-white', 'hover:bg-gray-100');
+                }, 3000);
+            }, 2000);
+        });
+
+        // Load More Projects Animation
+        const loadMoreBtn = document.getElementById('load-more');
+        loadMoreBtn.addEventListener('click', function() {
+            const spinner = this.querySelector('.fa-spinner');
+            spinner.classList.remove('hidden');
+            this.disabled = true;
+            
+            // Simulate loading
+            setTimeout(() => {
+                spinner.classList.add('hidden');
+                this.disabled = false;
+                this.innerHTML = '<span>No More Projects</span><i class="fas fa-check ml-2"></i>';
+                this.classList.remove('bg-primary', 'hover:bg-secondary');
+                this.classList.add('bg-gray-400', 'cursor-not-allowed');
+            }, 1500);
+        });
+
+        // Hover effects for project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>

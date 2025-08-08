@@ -110,11 +110,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const typed = new Typed('.typed-text', {
             strings: [
                 'Electronics Engineer',
-                'Embedded Systems Developer',
-                'IoT Specialist',
-                'PLC Programmer'
+                'PCB Designer',
+                'IoT Enthusiast',
+                'Circuit Design & Analyst',
+                'PLC Programmer',
+                'KONTOLLLLLLL'
             ],
-            typeSpeed: 50,
+            typeSpeed: 40,
             backSpeed: 30,
             loop: true,
             showCursor: true,
